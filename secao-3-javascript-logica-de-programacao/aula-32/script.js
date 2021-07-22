@@ -1,5 +1,5 @@
 /* Seção 3: JavaScript - Lógica de programação
-Vídeo nro. 59 - aula 39 no git
+Vídeo nro. 59 - aula 40 no git
 Break e continue
  */
 
@@ -74,3 +74,4 @@ do{
         }
         index++;
     } while (index< numeros.length);
+    

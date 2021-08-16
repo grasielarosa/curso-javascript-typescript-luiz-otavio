@@ -1,5 +1,5 @@
 /* Seção 5: JavaScript - Arrays - Avançado
-Vídeo nro. 84 aula 65 no git
+Vídeo nro. 85 aula 66 no git
 Função Map
  */
 /*

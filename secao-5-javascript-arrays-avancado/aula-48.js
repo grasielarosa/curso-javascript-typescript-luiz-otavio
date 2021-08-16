@@ -5,7 +5,7 @@ Filter
 
 // * FILTER SEMPRE RETORNA UM ARRAY COM A MESMA QUANTIDADE DE ELEMENTOS OU MENOS QUE O ORIGINAL.
 
-const numeros = [5, 50, 80, 1, 2, 3, 5, 8, 7, 11, 15, 22, 27];
+//const numeros = [5, 50, 80, 1, 2, 3, 5, 8, 7, 11, 15, 22, 27];
 /*
 * maneira longa de retornar os números maiores que 10
  - criamos uma função de callback
@@ -43,7 +43,33 @@ const numerosFiltrados = numeros.filter(callbackFilter);
 - como a função tem só um parâmetro, tiramos os parênteses dele. 
 
 - como a função tem só uma linha, podemos retirar as chaves e o return e expressá-la dessa maneira, muito mais prolixa.
-*/
+
 const numerosFiltrados = numeros.filter(valor => valor > 10);
 
 console.log(numerosFiltrados)
+
+***********************************************
+*/
+
+const pessoas = [
+    { nome: 'Luiz', idade: 62 },
+    { nome: 'Maria', idade: 23 },
+    { nome: 'Eduardo', idade: 55 },
+    { nome: 'Leticia', idade: 19 },
+    { nome: 'Rosana', idade: 32 },
+    { nome: 'Walace', idade: 47 },
+];
+
+
+const pessoas2 = pessoas.filter(obj => obj.nome.length >= 6
+);
+
+const pessoas3 = pessoas.filter(obj => obj.idade >=50);
+
+const pessoas4 = pessoas.filter(obj => {
+    return obj.nome.toLowerCase().endsWith('a')
+})
+const pessoas5 = pessoas.filter(obj => {
+    return obj.nome.includes('i')
+})
+console.log(pessoas5)

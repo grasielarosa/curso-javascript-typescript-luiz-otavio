@@ -36,7 +36,7 @@ const numerosFiltrados = numeros.filter(callbackFilter);
 
 - console.log(array) // a cada iteração, ele envia o array inteiro
 */
-// 
+//
 
 /*
 * Versão melhorada
@@ -52,24 +52,22 @@ console.log(numerosFiltrados)
 */
 
 const pessoas = [
-    { nome: 'Luiz', idade: 62 },
-    { nome: 'Maria', idade: 23 },
-    { nome: 'Eduardo', idade: 55 },
-    { nome: 'Leticia', idade: 19 },
-    { nome: 'Rosana', idade: 32 },
-    { nome: 'Walace', idade: 47 },
+  { nome: "Luiz", idade: 62 },
+  { nome: "Maria", idade: 23 },
+  { nome: "Eduardo", idade: 55 },
+  { nome: "Leticia", idade: 19 },
+  { nome: "Rosana", idade: 32 },
+  { nome: "Walace", idade: 47 },
 ];
 
+const pessoas2 = pessoas.filter((obj) => obj.nome.length >= 6);
 
-const pessoas2 = pessoas.filter(obj => obj.nome.length >= 6
-);
+const pessoas3 = pessoas.filter((obj) => obj.idade >= 50);
 
-const pessoas3 = pessoas.filter(obj => obj.idade >=50);
-
-const pessoas4 = pessoas.filter(obj => {
-    return obj.nome.toLowerCase().endsWith('a')
-})
-const pessoas5 = pessoas.filter(obj => {
-    return obj.nome.includes('i')
-})
-console.log(pessoas5)
+const pessoas4 = pessoas.filter((obj) => {
+  return obj.nome.toLowerCase().endsWith("a");
+});
+const pessoas5 = pessoas.filter((obj) => {
+  return obj.nome.includes("i");
+});
+console.log(pessoas2);
